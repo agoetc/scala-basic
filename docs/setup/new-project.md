@@ -23,7 +23,7 @@ build.sbtにはsbt.Versionと、scalaVersionというものを設定しました
 理由がない限り最新のものを指定するようにしましょう。
 
 
-### Scalaファイルの作成
+## Scalaファイルの作成
 tutorialフォルダの中にScalaファイルを作成します。  
 ここでは**HelloWorld.scala**というファイル名にします。  
 ```bash
@@ -47,7 +47,7 @@ tutorial/
 ┗ build.sbt
 ```
 
-### Scalaの実行
+## Scalaの実行
 sbtというコマンドを打つことで、sbtを起動します。   
 起動時に`target`と`project`というフォルダが作成されますが気にしないでください。
 ```sbt

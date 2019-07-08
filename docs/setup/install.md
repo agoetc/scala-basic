@@ -1,17 +1,19 @@
-# 前提条件
+# インストール
+
+## 前提条件
 macOS Mojave 10.14.5
 
-### homebrewのインストール
+## homebrewのインストール
 homebrewとはパッケージマネージャーです。  
 簡単に言うと色んなものをインストールするためのツールです。  
 [ここ](https://qiita.com/_daisuke/items/d3b2477d15ed2611a058)などを参考にしhomebrewをインストールしてください。
 
-### sbt
+## sbt
 sbtとはビルドツールです。  
 簡単に言うとScalaを実行するためのものです。  
 以下よりsbtをインストールするための準備を行います。
 
-#### Javaのインストール
+### Javaのインストール
 Javaとはプログラミング言語です。  
 Scalaを動かすために必要なため、  
 [こちら](https://www.java.com/ja/download/mac_download.jsp)からダウンロードし、インストールしてください。  
@@ -25,7 +27,7 @@ Java(TM) SE Runtime Environment (build 1.8.0_111-b14)
 Java HotSpot(TM) 64-Bit Server VM (build 25.111-b14, mixed mode)
 ```
 
-#### sbtのインストール
+### sbtのインストール
 sbtをインストールします。  
 `brew install sbt`  
 インストール完了後、  
