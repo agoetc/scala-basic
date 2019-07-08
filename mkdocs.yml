@@ -1,7 +1,13 @@
 site_name: Scala Basic
 
 nav:
-  - Home: index.md
+  - はじめに: index.md
+  - 環境構築:
+    - インストール: setup/install.md
+    - IDE: setup/ide.md
+    - プロジェクトの作成: setup/new-project.md
+    - プロジェクトの読み込み: setup/import-project.md
+    - Scalaワークシート: setup/worksheet.md 
 
 theme:
   name: material
