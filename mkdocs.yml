@@ -7,7 +7,7 @@ nav:
     - IDE: setup/ide.md
     - プロジェクトの作成: setup/new-project.md
     - プロジェクトの読み込み: setup/import-project.md
-    - Scalaワークシート: setup/worksheet.md 
+    - Scalaワークシート: setup/worksheet.md
 
 theme:
   name: material
@@ -15,3 +15,5 @@ theme:
 markdown_extensions:
   - admonition
   - codehilite
+  - toc:
+      permalink: true
