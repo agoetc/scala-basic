@@ -27,7 +27,7 @@ println("はろー")
 赤で囲っている再生マークをクリックすると、実行されます。  
 実行すると右に結果が表示されます。
 
-![run](/img/setup/worksheet/run.png)
+![run](../img/setup/worksheet/run.png)
 
 環境構築はこれにて終了です。  
 お疲れ様でした。

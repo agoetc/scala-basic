@@ -7,11 +7,11 @@ IntelliJ IDEAにはUltimate Edition(有料)と、Community Edition(無料)があ
 
 ## IntelliJ IDEAのインストール
 [IntelliJ IDEA  ダウンロードページ](https://www.jetbrains.com/idea/download/)へアクセスしてください。
-![download](/img/setup/ide/download.jpg)  
+![download](../img/setup/ide/download.jpg)  
 CommunityのほうのDOWNLOADボタンをクリックすると、  
 ページが遷移しダウンロードが開始します。  
 
-![install](/img/setup/ide/install.png)
+![install](../img/setup/ide/install.png)
 
 ダウンロード完了後、  
 ダウンロードしてきた**idealC-バージョン.dmg**を実行し、  
@@ -23,12 +23,12 @@ CommunityのほうのDOWNLOADボタンをクリックすると、
 ## Scalaプラグインのインストール
 IntelliJ IDEAでScalaを使用するために、Scalaプラグインをインストールします。
 
-![starting](/img/setup/ide/starting.png)
+![starting](../img/setup/ide/starting.png)
 IntelliJ IDEAを起動し、起動画面にたどり着いたら、  
 右下にある**Configure**をクリックしてください。  
 メニューが表示されるので、そのまま**Plugins**の項目をクリックしてください。
 
-![plugins](/img/setup/ide/plugins.png)
+![plugins](../img/setup/ide/plugins.png)
 上にある**Marketplace**のタブを選択し、
 緑の丸で囲われているScalaプラグインがあることを確認してください。  
 無ければ検索機能で**Scala**で検索してください。  
