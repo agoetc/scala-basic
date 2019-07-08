@@ -230,6 +230,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#_2" title="前提条件" class="md-nav__link">
+    前提条件
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#homebrew" title="homebrewのインストール" class="md-nav__link">
     homebrewのインストール
   </a>
@@ -237,29 +244,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sbt" title="sbt" class="md-nav__link">
-    sbt
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#java" title="Javaのインストール" class="md-nav__link">
     Javaのインストール
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#sbt_1" title="sbtのインストール" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#sbt" title="sbtのインストール" class="md-nav__link">
     sbtのインストール
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -348,6 +342,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#_2" title="前提条件" class="md-nav__link">
+    前提条件
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#homebrew" title="homebrewのインストール" class="md-nav__link">
     homebrewのインストール
   </a>
@@ -355,29 +356,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sbt" title="sbt" class="md-nav__link">
-    sbt
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#java" title="Javaのインストール" class="md-nav__link">
     Javaのインストール
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#sbt_1" title="sbtのインストール" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#sbt" title="sbtのインストール" class="md-nav__link">
     sbtのインストール
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -398,17 +386,14 @@
               
                 
                 
-                <h1 id="_1">前提条件<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+                <h1 id="_1">インストール<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">前提条件<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>macOS Mojave 10.14.5</p>
-<h3 id="homebrew">homebrewのインストール<a class="headerlink" href="#homebrew" title="Permanent link">&para;</a></h3>
+<h2 id="homebrew">homebrewのインストール<a class="headerlink" href="#homebrew" title="Permanent link">&para;</a></h2>
 <p>homebrewとはパッケージマネージャーです。<br />
 簡単に言うと色んなものをインストールするためのツールです。<br />
 <a href="https://qiita.com/_daisuke/items/d3b2477d15ed2611a058">ここ</a>などを参考にしhomebrewをインストールしてください。</p>
-<h3 id="sbt">sbt<a class="headerlink" href="#sbt" title="Permanent link">&para;</a></h3>
-<p>sbtとはビルドツールです。<br />
-簡単に言うとScalaを実行するためのものです。<br />
-以下よりsbtをインストールするための準備を行います。</p>
-<h4 id="java">Javaのインストール<a class="headerlink" href="#java" title="Permanent link">&para;</a></h4>
+<h2 id="java">Javaのインストール<a class="headerlink" href="#java" title="Permanent link">&para;</a></h2>
 <p>Javaとはプログラミング言語です。<br />
 Scalaを動かすために必要なため、<br />
 <a href="https://www.java.com/ja/download/mac_download.jsp">こちら</a>からダウンロードし、インストールしてください。<br />
@@ -421,8 +406,10 @@ Java HotSpot<span class="o">(</span>TM<span class="o">)</span> <span class="m">6
 </pre></div>
 
 
-<h4 id="sbt_1">sbtのインストール<a class="headerlink" href="#sbt_1" title="Permanent link">&para;</a></h4>
-<p>sbtをインストールします。<br />
+<h2 id="sbt">sbtのインストール<a class="headerlink" href="#sbt" title="Permanent link">&para;</a></h2>
+<p>sbtとはビルドツールです。<br />
+簡単に言うとScalaを実行するためのものです。<br />
+homebrewを使用してインストールします。<br />
 <code>brew install sbt</code><br />
 インストール完了後、<br />
 <code>sbt about</code>を実行し、  動作することを確認します。<br />
