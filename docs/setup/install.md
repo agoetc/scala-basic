@@ -26,13 +26,15 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.111-b14, mixed mode)
 sbtとはビルドツールです。  
 簡単に言うとScalaを実行するためのものです。  
 homebrewを使用してインストールします。  
-`brew install sbt`  
+```bash
+$ brew install sbt
+```  
 インストール完了後、  
 `sbt about`を実行し、  動作することを確認します。  
 初回起動はめちゃくちゃ遅いですが気長に待ってください。  
 下記のように出ればインストール成功です。  
 これにてScalaを実行する準備は出来ました。  
-```bash
+```sbt
 $ sbt about
 [info] Updated file /Users/user/project/build.properties: set sbt.version to 1.2.8
 [info] Loading settings for project global-plugins from idea.sbt ...

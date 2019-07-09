@@ -20,7 +20,7 @@ tutorial/
 
 早速`tutorial.sc`にScalaを書き込み、実行してみましょう。  
 コードの解説などは次ページ以降に行います。  
-```scala:tutorial.sc
+```scala
 println("はろー")
 ```
 
