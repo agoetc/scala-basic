@@ -409,33 +409,36 @@ Java HotSpot<span class="o">(</span>TM<span class="o">)</span> <span class="m">6
 <h2 id="sbt">sbtのインストール<a class="headerlink" href="#sbt" title="Permanent link">&para;</a></h2>
 <p>sbtとはビルドツールです。<br />
 簡単に言うとScalaを実行するためのものです。<br />
-homebrewを使用してインストールします。<br />
-<code>brew install sbt</code><br />
-インストール完了後、<br />
+homebrewを使用してインストールします。  </p>
+<div class="codehilite"><pre><span></span>$ brew install sbt
+</pre></div>
+
+
+<p>インストール完了後、<br />
 <code>sbt about</code>を実行し、  動作することを確認します。<br />
 初回起動はめちゃくちゃ遅いですが気長に待ってください。<br />
 下記のように出ればインストール成功です。<br />
 これにてScalaを実行する準備は出来ました。  </p>
-<div class="codehilite"><pre><span></span>$ sbt about
-<span class="o">[</span>info<span class="o">]</span> Updated file /Users/user/project/build.properties: <span class="nb">set</span> sbt.version to <span class="m">1</span>.2.8
-<span class="o">[</span>info<span class="o">]</span> Loading settings <span class="k">for</span> project global-plugins from idea.sbt ...
-<span class="o">[</span>info<span class="o">]</span> Loading global plugins from /Users/user/.sbt/1.0/plugins
-<span class="o">[</span>info<span class="o">]</span> Loading project definition from /Users/user/project
-<span class="o">[</span>info<span class="o">]</span> Updating ProjectRef<span class="o">(</span>uri<span class="o">(</span><span class="s2">&quot;file:/Users/user/project/&quot;</span><span class="o">)</span>, <span class="s2">&quot;user-build&quot;</span><span class="o">)</span>...
-<span class="o">[</span>info<span class="o">]</span> Done updating.
-<span class="o">[</span>info<span class="o">]</span> Set current project to user <span class="o">(</span>in build file:/Users/user/<span class="o">)</span>
-<span class="o">[</span>info<span class="o">]</span> This is sbt <span class="m">1</span>.2.8
-<span class="o">[</span>info<span class="o">]</span> The current project is ProjectRef<span class="o">(</span>uri<span class="o">(</span><span class="s2">&quot;file:/Users/user/&quot;</span><span class="o">)</span>, <span class="s2">&quot;user&quot;</span><span class="o">)</span> <span class="m">0</span>.1.0-SNAPSHOT
-<span class="o">[</span>info<span class="o">]</span> The current project is built against Scala <span class="m">2</span>.12.7
-<span class="o">[</span>info<span class="o">]</span> Available Plugins
-<span class="o">[</span>info<span class="o">]</span>  - sbt.ScriptedPlugin
-<span class="o">[</span>info<span class="o">]</span>  - sbt.plugins.CorePlugin
-<span class="o">[</span>info<span class="o">]</span>  - sbt.plugins.Giter8TemplatePlugin
-<span class="o">[</span>info<span class="o">]</span>  - sbt.plugins.IvyPlugin
-<span class="o">[</span>info<span class="o">]</span>  - sbt.plugins.JUnitXmlReportPlugin
-<span class="o">[</span>info<span class="o">]</span>  - sbt.plugins.JvmPlugin
-<span class="o">[</span>info<span class="o">]</span>  - sbt.plugins.SbtPlugin
-<span class="o">[</span>info<span class="o">]</span> sbt, sbt plugins, and build definitions are using Scala <span class="m">2</span>.12.7
+<div class="codehilite"><pre><span></span>$ <span class="nv">sbt</span> <span class="nv">about</span>
+[<span class="nv">info</span>] <span class="nv">Updated</span> <span class="nv">file</span> <span class="o">/</span><span class="nv">Users</span><span class="o">/</span><span class="nv">user</span><span class="o">/</span><span class="nv">project</span><span class="o">/</span><span class="nv">build</span>.<span class="nv">properties</span>: <span class="nv">set</span> <span class="nv">sbt</span>.<span class="nv">version</span> <span class="nv">to</span> <span class="mi">1</span>.<span class="mi">2</span>.<span class="mi">8</span>
+[<span class="nv">info</span>] <span class="nv">Loading</span> <span class="nv">settings</span> <span class="k">for</span> <span class="nv">project</span> <span class="nv">global</span><span class="o">-</span><span class="nv">plugins</span> <span class="nv">from</span> <span class="nv">idea</span>.<span class="nv">sbt</span> ...
+[<span class="nv">info</span>] <span class="nv">Loading</span> <span class="nv">global</span> <span class="nv">plugins</span> <span class="nv">from</span> <span class="o">/</span><span class="nv">Users</span><span class="o">/</span><span class="nv">user</span><span class="o">/</span>.<span class="nv">sbt</span><span class="o">/</span><span class="mi">1</span>.<span class="mi">0</span><span class="o">/</span><span class="nv">plugins</span>
+[<span class="nv">info</span>] <span class="nv">Loading</span> <span class="nv">project</span> <span class="nv">definition</span> <span class="nv">from</span> <span class="o">/</span><span class="nv">Users</span><span class="o">/</span><span class="nv">user</span><span class="o">/</span><span class="nv">project</span>
+[<span class="nv">info</span>] <span class="nv">Updating</span> <span class="nv">ProjectRef</span><span class="ss">(</span><span class="nv">uri</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">file:/Users/user/project/</span><span class="s2">&quot;</span><span class="ss">)</span>, <span class="s2">&quot;</span><span class="s">user-build</span><span class="s2">&quot;</span><span class="ss">)</span>...
+[<span class="nv">info</span>] <span class="nv">Done</span> <span class="nv">updating</span>.
+[<span class="nv">info</span>] <span class="nv">Set</span> <span class="nv">current</span> <span class="nv">project</span> <span class="nv">to</span> <span class="nv">user</span> <span class="ss">(</span><span class="nv">in</span> <span class="nv">build</span> <span class="nv">file</span>:<span class="o">/</span><span class="nv">Users</span><span class="o">/</span><span class="nv">user</span><span class="o">/</span><span class="ss">)</span>
+[<span class="nv">info</span>] <span class="nv">This</span> <span class="nv">is</span> <span class="nv">sbt</span> <span class="mi">1</span>.<span class="mi">2</span>.<span class="mi">8</span>
+[<span class="nv">info</span>] <span class="nv">The</span> <span class="nv">current</span> <span class="nv">project</span> <span class="nv">is</span> <span class="nv">ProjectRef</span><span class="ss">(</span><span class="nv">uri</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">file:/Users/user/</span><span class="s2">&quot;</span><span class="ss">)</span>, <span class="s2">&quot;</span><span class="s">user</span><span class="s2">&quot;</span><span class="ss">)</span> <span class="mi">0</span>.<span class="mi">1</span>.<span class="mi">0</span><span class="o">-</span><span class="nv">SNAPSHOT</span>
+[<span class="nv">info</span>] <span class="nv">The</span> <span class="nv">current</span> <span class="nv">project</span> <span class="nv">is</span> <span class="nv">built</span> <span class="nv">against</span> <span class="nv">Scala</span> <span class="mi">2</span>.<span class="mi">12</span>.<span class="mi">7</span>
+[<span class="nv">info</span>] <span class="nv">Available</span> <span class="nv">Plugins</span>
+[<span class="nv">info</span>]  <span class="o">-</span> <span class="nv">sbt</span>.<span class="nv">ScriptedPlugin</span>
+[<span class="nv">info</span>]  <span class="o">-</span> <span class="nv">sbt</span>.<span class="nv">plugins</span>.<span class="nv">CorePlugin</span>
+[<span class="nv">info</span>]  <span class="o">-</span> <span class="nv">sbt</span>.<span class="nv">plugins</span>.<span class="nv">Giter8TemplatePlugin</span>
+[<span class="nv">info</span>]  <span class="o">-</span> <span class="nv">sbt</span>.<span class="nv">plugins</span>.<span class="nv">IvyPlugin</span>
+[<span class="nv">info</span>]  <span class="o">-</span> <span class="nv">sbt</span>.<span class="nv">plugins</span>.<span class="nv">JUnitXmlReportPlugin</span>
+[<span class="nv">info</span>]  <span class="o">-</span> <span class="nv">sbt</span>.<span class="nv">plugins</span>.<span class="nv">JvmPlugin</span>
+[<span class="nv">info</span>]  <span class="o">-</span> <span class="nv">sbt</span>.<span class="nv">plugins</span>.<span class="nv">SbtPlugin</span>
+[<span class="nv">info</span>] <span class="nv">sbt</span>, <span class="nv">sbt</span> <span class="nv">plugins</span>, <span class="nv">and</span> <span class="nv">build</span> <span class="nv">definitions</span> <span class="nv">are</span> <span class="nv">using</span> <span class="nv">Scala</span> <span class="mi">2</span>.<span class="mi">12</span>.<span class="mi">7</span>
 </pre></div>
                 
                   
