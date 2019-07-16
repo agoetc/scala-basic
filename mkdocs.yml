@@ -9,7 +9,7 @@ nav:
     - プロジェクトの読み込み: setup/import-project.md
     - Scalaワークシート: setup/worksheet.md
   - 基本:
-    - 出力: basic/output.md
+    - 文字の出力: basic/output.md
 
 theme:
   name: material

@@ -21,7 +21,7 @@ tutorial/
 早速`tutorial.sc`にScalaを書き込み、実行してみましょう。  
 コードの解説などは次ページ以降に行います。  
 ```scala
-println("はろー")
+println("hello")
 ```
 
 赤で囲っている再生マークをクリックすると、実行されます。  
