@@ -8,6 +8,8 @@ nav:
     - プロジェクトの作成: setup/new-project.md
     - プロジェクトの読み込み: setup/import-project.md
     - Scalaワークシート: setup/worksheet.md
+  - 基本:
+    - 出力: basic/output.md
 
 theme:
   name: material
