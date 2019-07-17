@@ -10,6 +10,7 @@ nav:
     - Scalaワークシート: setup/worksheet.md
   - 基本:
     - 文字の出力: basic/output.md
+    - 文字列と数値: basic/string-and-int.md
 
 theme:
   name: material
@@ -19,3 +20,4 @@ markdown_extensions:
   - codehilite
   - toc:
       permalink: true
+  - pymdownx.superfences
