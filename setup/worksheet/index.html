@@ -271,6 +271,66 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      基本
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        基本
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../basic/output/" title="文字の出力" class="md-nav__link">
+      文字の出力
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../basic/string-and-int/" title="文字列と数値" class="md-nav__link">
+      文字列と数値
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../basic/variable/" title="変数" class="md-nav__link">
+      変数
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -305,7 +365,7 @@
 <p>Scalaワークシートは簡単にScalaを実行できる、練習やテストなどに適しているものです。<br />
 プロジェクト内ならどこに作成してもいいですが、今回はtutorial直下に作成しましょう。<br />
 ファイル名もなんでもいいですが。今回は<code>tutorial.sc</code>とします。</p>
-<p>作成された後のフォルダ構成は以下の通りです。</p>
+<p>作成された後のフォルダ構成は以下の通りです。
 <div class="codehilite"><pre><span></span><span class="n">tutorial</span><span class="o">/</span>
 <span class="err">┣</span> <span class="p">.</span><span class="n">idea</span><span class="o">/</span>
 <span class="err">┣</span> <span class="n">project</span><span class="o">/</span>
@@ -313,20 +373,25 @@
 <span class="err">┣</span> <span class="n">HelloWorld</span><span class="p">.</span><span class="n">scala</span>
 <span class="err">┣</span> <span class="n">build</span><span class="p">.</span><span class="n">sbt</span>
 <span class="err">┗</span> <span class="n">tutorial</span><span class="p">.</span><span class="n">sc</span>
-</pre></div>
-
-
+</pre></div></p>
 <p>早速<code>tutorial.sc</code>にScalaを書き込み、実行してみましょう。<br />
-コードの解説などは次ページ以降に行います。  </p>
-<div class="codehilite"><pre><span></span><span class="n">println</span><span class="o">(</span><span class="s">&quot;はろー&quot;</span><span class="o">)</span>
-</pre></div>
-
-
+コードの解説などは次ページ以降に行います。<br />
+<div class="codehilite"><pre><span></span><span class="n">println</span><span class="o">(</span><span class="s">&quot;hello&quot;</span><span class="o">)</span>
+</pre></div></p>
 <p>赤で囲っている再生マークをクリックすると、実行されます。<br />
 実行すると右に結果が表示されます。</p>
 <p><img alt="run" src="../../img/setup/worksheet/run.png" /></p>
 <p>環境構築はこれにて終了です。<br />
 お疲れ様でした。</p>
+<p>また、次ページ以降では、
+以下のような形でコードの解説をします。
+<div class="codehilite"><pre><span></span><span class="err">自分のコード</span>
+<span class="o">&gt;</span> <span class="err">実行結果</span>
+</pre></div></p>
+<p>実際にコードを入れると以下のような感じです
+<div class="codehilite"><pre><span></span><span class="n">println</span><span class="o">(</span><span class="s">&quot;hello&quot;</span><span class="o">)</span>
+<span class="o">&gt;</span> <span class="n">hello</span>
+</pre></div></p>
                 
                   
                 
@@ -361,6 +426,20 @@
             </div>
           </a>
         
+        
+          <a href="../../basic/output/" title="文字の出力" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                文字の出力
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
         
       </nav>
     </div>
