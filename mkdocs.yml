@@ -13,6 +13,7 @@ nav:
     - コメント: basic/comment.md
     - 文字列と数値: basic/string-and-int.md
     - 変数: basic/variable.md
+    - 比較演算: basic/compare.md
 
 theme:
   name: material
