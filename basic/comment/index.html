@@ -36,7 +36,7 @@
     
     
       
-        <title>変数 - Scala Basic</title>
+        <title>コメント - Scala Basic</title>
       
     
     
@@ -75,10 +75,6 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#_1" tabindex="1" class="md-skip">
-        Skip to content
-      </a>
-    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -101,7 +97,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                変数
+                コメント
               
             </span>
           
@@ -297,11 +293,18 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../comment/" title="コメント" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+    <a href="./" title="コメント" class="md-nav__link md-nav__link--active">
       コメント
     </a>
+    
   </li>
 
         
@@ -321,45 +324,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        変数
-      </label>
-    
-    <a href="./" title="変数" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../variable/" title="変数" class="md-nav__link">
       変数
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" title="型推論" class="md-nav__link">
-    型推論
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -387,69 +356,31 @@
               </div>
             
             
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" title="型推論" class="md-nav__link">
-    型推論
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                  <h1>変数</h1>
+                  <h1>コメント</h1>
                 
-                <p>変数というのは値を入れるものです。<br />
-よく、箱と例えられたりしています。
-<div class="codehilite"><pre><span></span> <span class="k">val</span> <span class="n">変数名</span><span class="k">:</span> <span class="kt">型</span> <span class="o">=</span> <span class="n">値</span>
+                <p>コードだけでは意味が汲み取れない場合が多いため、コメントという形で解説します。</p>
+<p>コメントは<code>/*</code>から始まり<code>*/</code>で終わります
+<div class="codehilite"><pre><span></span><span class="cm">/*</span>
+<span class="cm">これは</span>
+<span class="cm">helloという文字を出力するプログラム</span>
+<span class="cm">*/</span>
+<span class="n">println</span><span class="o">(</span><span class="s">&quot;hello&quot;</span><span class="o">)</span>
+<span class="o">&gt;</span> <span class="n">hello</span>
 </pre></div></p>
-<p><strong>変数名</strong>というのは、変数につける名前です。値に応じた名前を付けたりします。<br />
-<strong>型</strong>というのは文字列(String型)や数値(Int型)などのことです。<br />
-<strong>値</strong>というのは<code>"hello"</code>や<code>123</code>などのデータのことです。  </p>
-<p>実際に変数を使ってみます。<br />
-<div class="codehilite"><pre><span></span><span class="k">val</span> <span class="n">name</span><span class="k">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">&quot;佐藤&quot;</span>
-<span class="n">println</span><span class="o">(</span><span class="n">name</span><span class="o">)</span>
-<span class="o">&gt;</span> <span class="n">佐藤</span>
-</pre></div></p>
-<p>上のコードは以下のコードと全く同じ結果です
-<div class="codehilite"><pre><span></span><span class="n">println</span><span class="o">(</span><span class="s">&quot;佐藤&quot;</span><span class="o">)</span>
-<span class="o">&gt;</span> <span class="n">佐藤</span>
-</pre></div></p>
-<p>変数を使うことで、コードの量が増えたときに散らかりにくくなるのでガンガン使いましょう。  </p>
-<h2 id="_1">型推論<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>値の型を読み取り、自動で型を解釈してくれる機能があります。
-<div class="codehilite"><pre><span></span><span class="k">val</span> <span class="n">name</span> <span class="k">=</span> <span class="s">&quot;佐藤&quot;</span>
-<span class="n">println</span><span class="o">(</span><span class="n">name</span><span class="o">)</span>
-<span class="o">&gt;</span> <span class="n">佐藤</span>
-</pre></div></p>
-<p>今回<code>"佐藤"</code>という文字列を渡しているので、<br />
-自動でnameはString型だと認識してくれます。(ありがたいですね)<br />
-<strong>変数の型は基本的に書かないのが普通</strong>ですので、型推論にガンガン頼りましょう。</p>
+<p><code>/**/</code>を使用したコメントは複数行記述出来るのに対して
+1行のみコメントすることが出来る<code>//</code>もあります。</p>
+<div class="codehilite"><pre><span></span><span class="c1">// これはhelloという文字を出力するプログラム</span>
+<span class="n">println</span><span class="o">(</span><span class="s">&quot;hello&quot;</span><span class="o">)</span>
+<span class="o">&gt;</span> <span class="n">hello</span>
+</pre></div>
+
+<p>コメントはプログラムの処理や実行時間に影響を与えないので気にせず記述して良いです。</p>
                 
                   
                 
@@ -470,7 +401,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../string-and-int/" title="文字列と数値" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../output/" title="文字の出力" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -479,19 +410,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                文字列と数値
+                文字の出力
               </span>
             </div>
           </a>
         
         
-          <a href="../compare/" title="比較演算" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../string-and-int/" title="文字列と数値" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                比較演算
+                文字列と数値
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

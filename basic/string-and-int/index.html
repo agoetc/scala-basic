@@ -297,6 +297,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../comment/" title="コメント" class="md-nav__link">
+      コメント
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -350,8 +362,22 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_3" title="優先順位" class="md-nav__link">
+    優先順位
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#float" title="浮動小数点数(Float型)" class="md-nav__link">
+    浮動小数点数(Float型)
+  </a>
   
 </li>
       
@@ -374,6 +400,18 @@
   <li class="md-nav__item">
     <a href="../variable/" title="変数" class="md-nav__link">
       変数
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../compare/" title="比較演算" class="md-nav__link">
+      比較演算
     </a>
   </li>
 
@@ -430,8 +468,22 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_3" title="優先順位" class="md-nav__link">
+    優先順位
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#float" title="浮動小数点数(Float型)" class="md-nav__link">
+    浮動小数点数(Float型)
+  </a>
   
 </li>
       
@@ -477,7 +529,11 @@
 </pre></div>
 123が出力されました。</p>
 <h3 id="_2">四則演算<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
-<p>数値は四則演算をすることができます。
+<p>四則演算とは、
+足し算、<br />
+引き算、<br />
+掛け算、<br />
+割り算です。<br />
 実際にやってみましょう
 <div class="codehilite"><pre><span></span><span class="c1">// 足し算</span>
 <span class="n">println</span><span class="o">(</span><span class="mi">6</span> <span class="o">+</span> <span class="mi">3</span><span class="o">)</span>
@@ -499,6 +555,38 @@
 <span class="n">println</span><span class="o">(</span><span class="mi">5</span> <span class="o">%</span> <span class="mi">3</span><span class="o">)</span>
 <span class="o">&gt;</span> <span class="mi">2</span>
 </pre></div></p>
+<h3 id="_3">優先順位<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>計算の優先順位は通常の計算と同じです。<br />
+掛け算や割り算より、足し算引き算を優先したい場合はカッコを使いましょう。　　
+<div class="codehilite"><pre><span></span><span class="n">println</span><span class="o">(</span><span class="mi">2</span> <span class="o">*</span> <span class="mi">4</span> <span class="o">-</span> <span class="mi">2</span><span class="o">)</span>
+<span class="o">&gt;</span> <span class="mi">6</span>
+
+<span class="n">println</span><span class="o">(</span><span class="mi">2</span> <span class="o">*</span> <span class="o">(</span><span class="mi">4</span> <span class="o">-</span> <span class="mi">2</span><span class="o">))</span>
+<span class="o">&gt;</span> <span class="mi">4</span>
+</pre></div></p>
+<h2 id="float">浮動小数点数(Float型)<a class="headerlink" href="#float" title="Permanent link">&para;</a></h2>
+<p>浮動小数点数とは小数のことです。<br />
+実は数値同士の計算では小数を求める事ができません。</p>
+<div class="codehilite"><pre><span></span><span class="c1">// 小数以下は切り捨てられる</span>
+<span class="n">println</span><span class="o">(</span><span class="mi">1</span> <span class="o">/</span> <span class="mi">2</span><span class="o">)</span>
+<span class="o">&gt;</span> <span class="mi">0</span>
+
+<span class="c1">// Float型同士の計算</span>
+<span class="n">println</span><span class="o">(</span><span class="mf">1.0</span> <span class="o">/</span> <span class="mf">2.0</span><span class="o">)</span>
+<span class="o">&gt;</span> <span class="mf">0.5</span>
+
+<span class="c1">// Int型とFloat型の計算でも小数を求められる</span>
+<span class="n">println</span><span class="o">(</span><span class="mi">1</span> <span class="o">/</span> <span class="mf">2.0</span><span class="o">)</span>
+<span class="o">&gt;</span> <span class="mf">0.5</span>
+
+<span class="c1">// 型を指定してあげるとInt型の値を入れても自動的にFloat型になる</span>
+<span class="k">val</span> <span class="n">a</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">val</span> <span class="n">b</span><span class="k">:</span> <span class="kt">Float</span> <span class="o">=</span> <span class="mi">2</span>
+
+<span class="n">println</span><span class="o">(</span><span class="n">a</span> <span class="o">/</span> <span class="n">b</span><span class="o">)</span>
+<span class="o">&gt;</span> <span class="mf">0.5</span>
+</pre></div>
+
 <div class="admonition note">
 <p class="admonition-title">文字列の数字</p>
 <p>数値であっても<code>"</code>で囲うことで文字列になってしまいます。<br />
@@ -527,7 +615,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../output/" title="文字の出力" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../comment/" title="コメント" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -536,7 +624,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                文字の出力
+                コメント
               </span>
             </div>
           </a>
