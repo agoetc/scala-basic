@@ -15,6 +15,7 @@ nav:
     - 変数: basic/variable.md
     - 比較演算: basic/compare.md
     - 条件分岐(if): basic/branching.md
+    - 条件分岐(match式): basic/match.md
 
 theme:
   name: material
